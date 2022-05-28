@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detalle de Estudiante</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/estudiante">Lista de Estudiantes</a></h3>
+            <h1>Detalle de Estudiante</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Codigo</td>
+                        <td>{{ estudiante.codigo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>{{ estudiante.nombre }}</td>
+                    </tr>
+                    <tr>
+                        <td>Escala</td>
+                        <td>{{ estudiante.escala }}</td>
+                    </tr>
+                    <tr>
+                        <td>Promedio</td>
+                        <td>{{ estudiante.promedio }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
