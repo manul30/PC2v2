@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Crear Estudiante</title>
-    </head>
-    <body>
-        <div class="container">
-            <h3><a href="/estudiante">Lista de Productos</a></h3>
-            <h1>Crear Nuevo Producto</h1>
-            <form action="/estudiante/save" method="post">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Código</td>
-                            <td><input type="text" name="codigo" /></td>
-                        </tr>
-                        <tr>
-                            <td>Nombre</td>
-                            <td><input type="text" name="nombre" /></td>
-                        </tr>
-                        <tr>
-                            <td>Escala</td>
-                            <td><input type="text" name="escala" /></td>
-                        </tr>
-                        <tr>
-                            <td>Promedio</td>
-                            <td><input type="number" name="promedio" /></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><input type="submit" value="Grabar" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-        </div>
-    </body>
+ <head>
+ <title>Crear Estudiante</title>
+ </head>
+ <body>
+ <div class="container">
+ <h3><a href="/estudiantes">Lista de Productos</a></h3>
+ <h1>Crear Nuevo Estudiante</h1>
+ <form action="/estudiantes/save" method="post">
+ <table>
+ <tbody>
+ <tr>
+ <td>Codigo</td>
+<td><input type="text" name="codigo"
+/></td>
+ </tr>
+ <tr>
+ <td>Nombres</td>
+<td><input type="text" name="nombre"
+/></td>
+ </tr>
+<tr>
+ <td>Apellidos</td>
+<td><input type="text" name="apellidos"
+/></td>
+ </tr>
+ <tr>
+ <td>Email</td>
+<td><input type="text" name="mail"
+/></td>
+ </tr>
+ <tr>
+ <td>Celular</td>
+<td><input type="text" name="celular"
+/></td>
+ </tr>
+<tr>
+ <td>Carrera</td>
+<td><input type="text" name="carrera"
+/></td>
+ </tr>
+
+ <td colspan="2"><input type="submit"
+value="Grabar" /></td>
+ </tr>
+ </tbody>
+ </table>
+ </form>
+ </div>
+ </body>
 </html>
+

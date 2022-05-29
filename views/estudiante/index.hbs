@@ -1,32 +1,41 @@
 <h1>{{title}}</h1>
-<h1> Estudiantes</h1>
-    <p >
-        <div class="container">
-            <h3><a href="/estudiante/create">Crear Estudiante</a></h3>
-            <h1>Lista de Estudiantes</h1>
-            {{#if estudiantes }}
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Codigo</th>
-                            <th>Nombre</th>
-                            <th>Escala</th>
-                            <th>Promedio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{# each estudiantes }}
-                        <tr>
-                            <td><a href="/estudiante/show/{{ _id }}">{{ codigo }}</a></td>
-                            <td>{{ nombre }}</td>
-                            <td>{{ escala }}</td>
-                            <td>{{ promedio }}</td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            {{~^~}}
-                <div>Estudiantes no encontrados.</div>
-            {{/if}}
-        </div>
-    </p>
+<p>Bienvenido a PC2 Manuel Carita</p>
+
+<h1>{{title}}</h1>
+<h1> Agregar Estudiante</h1>
+ <p >
+ <div class="container">
+ <h3><a href="/estudiantes/create">Crear Estudiante</a></h3>
+ <h1>Lista de Estudiantes</h1>
+ {{#if estudiantes }}
+ <table class="table table-hover" border="1">
+ <thead>
+ <tr>
+ <th>Codigo</th>
+ <th>Nombre</th>
+ <th>Apellido</th>
+ <th>Email</th>
+ <th>Celular</th>
+ <th>Carrera</th>
+ </tr>
+ </thead>
+<tbody>
+ {{# each estudiantes }}
+<tr>
+ <td><a href="/estudiantes/show/{{ _id
+}}">{{ codigo }}</a></td>
+<td>{{ nombre }}</td>
+<td>{{ apellidos }}</td>
+<td>{{ mail }}</td>
+<td>{{ celular }}</td>
+<td>{{ carrera }}</td>
+
+ </tr>
+ {{/each}}
+ </tbody>
+ </table>
+ {{~^~}}
+ <div>Estudiantes no encontrados.</div>
+ {{/if}}
+ </div>
+ </p>

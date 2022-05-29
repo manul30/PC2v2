@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Detalle de Estudiante</title>
-    </head>
-    <body>
-        <div class="container">
-            <h3><a href="/estudiante">Lista de Estudiantes</a></h3>
-            <h1>Detalle de Estudiante</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Codigo</td>
-                        <td>{{ estudiante.codigo }}</td>
-                    </tr>
-                    <tr>
-                        <td>Nombre</td>
-                        <td>{{ estudiante.nombre }}</td>
-                    </tr>
-                    <tr>
-                        <td>Escala</td>
-                        <td>{{ estudiante.escala }}</td>
-                    </tr>
-                    <tr>
-                        <td>Promedio</td>
-                        <td>{{ estudiante.promedio }}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </body>
+ <head>
+ <title>Detalle de Estudiante</title>
+ </head>
+ <body>
+ <div class="container">
+ <h3><a href="/estudiantes">Lista de Estudiantes</a></h3>
+ <h1>Detalle de Estudiante</h1>
+ <table>
+ <tbody>
+ <tr>
+ <td>Codigo</td>
+<td>{{ estudiante.codigo }}</td>
+ </tr>
+ <tr>
+ <td>Nombre</td>
+<td>{{ estudiante.nombre }}</td>
+ </tr>
+<tr>
+ <td>Apellidos</td>
+<td>{{ estudiante.apellidos }}</td>
+ </tr>
+<tr>
+ <td>Email</td>
+<td>{{ estudiante.mail }}</td>
+ </tr>
+<tr>
+ <td>Celular</td>
+<td>{{ estudiante.celular }}</td>
+ </tr>
+ <td>Carrera</td>
+<td>{{ estudiante.carrera }}</td>
+ </tr>
+
+
+ </tbody>
+ </table>
+ </div>
+ </body>
 </html>
