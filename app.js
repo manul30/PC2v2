@@ -12,9 +12,9 @@ var bodyParser = require('body-parser');
 
 
 var app = express();
-//var mongoDB = 'mongodb://127.0.0.1:27017/dbPC2';
+var mongoDB = 'mongodb://127.0.0.1:27017/dbPC2';
 
-var mongoDB = 'mongodb://mongo:27017/dbPC2';
+//var mongoDB = 'mongodb://mongo:27017/dbPC2';
 mongoose.connect(mongoDB, {useNewUrlParser: true,
 useUnifiedTopology:true});
 mongoose.Promise = global.Promise;
